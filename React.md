@@ -1,0 +1,13 @@
+React es una biblioteca de JavaScript desarrollada inicialmente por Facebook para construir interfaces de usuario de manera eficiente y organizada. Utiliza un enfoque basado en componentes, donde cada componente representa una parte del UI que puede gestionar su propio estado y lógica.
+
+1. **[[Componentes]]:** React se basa en componentes, que son esencialmente piezas de la interfaz de usuario. Cada componente en React tiene su propio estado y props. Los **props** son parámetros que se pasan a los componentes para determinar su funcionamiento o apariencia, mientras que el **estado** es una estructura de datos que puede cambiar con el tiempo y afectar el comportamiento del componente y cómo se ve.
+    
+2. **[[JSX]]:** JSX es una sintaxis que se parece mucho al HTML y se utiliza para declarar cómo debería verse la interfaz de usuario. Aunque es opcional, la mayoría de los desarrolladores de React la utilizan por su claridad y similitud con el HTML. Bajo el capó, JSX se transpila a llamadas a la API de React que crea objetos de JavaScript.
+    
+3. **Renderizado:** React mantiene lo que se llama el **Virtual DOM**, una representación en memoria del DOM (Document Object Model) que permite a React hacer actualizaciones de manera eficiente. Cuando el estado de un componente cambia, React actualiza este Virtual DOM. Luego, React compara el Virtual DOM actualizado con una versión anterior y calcula la manera más eficiente de actualizar el DOM real del navegador.
+    
+4. **Reconciliación:** Este es el proceso mediante el cual React actualiza el DOM. Utiliza un algoritmo de diferencia para comparar el nuevo árbol de elementos con el anterior y realiza solo las actualizaciones necesarias en el DOM real para llevar el UI al estado deseado.
+    
+5. **[[Hooks]]:** Introducidos en la versión 16.8, los hooks son funciones que permiten a los componentes funcionales tener estado y otros rasgos que antes estaban solo disponibles en los componentes de clase. Por ejemplo, `useState` es un hook que permite a un componente tener estado, y `useEffect` es otro que permite realizar efectos secundarios en componentes funcionales.
+    
+6. **Flujo de Datos Unidireccional:** En React, el flujo de datos es unidireccional. Esto significa que los datos tienen una sola vía de flujo clara, desde el componente padre al hijo. Esto ayuda a evitar errores y complicaciones en la gestión de estados, haciendo que el manejo de la lógica de la aplicación sea más predecible y más fácil de entender.
